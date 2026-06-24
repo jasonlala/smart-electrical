@@ -1,0 +1,275 @@
+{{ define "main" }}
+
+<section class="hero-slider">
+
+    <div class="slides">
+
+        <div class="slide active">
+
+            <div class="hero-content">
+
+                <h1>
+                    1000A High Current Generator
+                </h1>
+
+                <p>
+                    Professional primary current injection testing equipment.
+                </p>
+
+                <a href="/products/products/1000a/" class="hero-btn">
+                    View Details
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="/images/products/1000a.jpg">
+            </div>
+
+        </div>
+
+        <div class="slide">
+
+            <div class="hero-content">
+
+                <h1>
+                    3000A High Current Generator
+                </h1>
+
+                <p>
+                    Stable output and industrial design.
+                </p>
+
+                <a href="/products/3000a/" class="hero-btn">
+                    View Details
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="/images/products/3000a.jpg">
+            </div>
+
+        </div>
+
+        <div class="slide">
+
+            <div class="hero-content">
+
+                <h1>
+                    5000A High Current Generator
+                </h1>
+
+                <p>
+                    Designed for switchgear testing.
+                </p>
+
+                <a href="/products/5000a/" class="hero-btn">
+                    View Details
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="/images/products/5000a.jpg">
+            </div>
+
+        </div>
+
+        <div class="slide">
+
+            <div class="hero-content">
+
+                <h1>
+                    10000A High Current Generator
+                </h1>
+
+                <p>
+                    Customized ultra high current testing system.
+                </p>
+
+                <a href="/products/10000a/" class="hero-btn">
+                    View Details
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="/images/products/10000a.jpg">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="dots">
+
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+
+    </div>
+
+</section>
+
+
+<section class="products-section">
+
+    <div class="section-title">
+
+        <h2>Our Products</h2>
+
+        <p>
+            Professional High Current Testing Equipment
+        </p>
+
+    </div>
+
+    <div class="products-grid">
+
+        <div class="product-card">
+
+            <img src="/images/products/1000a.jpg">
+
+            <div class="card-content">
+
+                <h3>
+                    1000A High Current Generator
+                </h3>
+
+                <p>
+                    Portable primary current injection
+                    testing equipment.
+                </p>
+
+                <a href="/products/1000a/"
+                   class="btn-card">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+
+            <img src="/images/products/3000a.jpg">
+
+            <div class="card-content">
+
+                <h3>
+                    3000A High Current Generator
+                </h3>
+
+                <p>
+                    Industrial current test solution.
+                </p>
+
+                <a href="/products/3000a/"
+                   class="btn-card">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+
+            <img src="/images/products/5000a.jpg">
+
+            <div class="card-content">
+
+                <h3>
+                    5000A High Current Generator
+                </h3>
+
+                <p>
+                    Designed for switchgear testing.
+                </p>
+
+                <a href="/products/5000a/"
+                   class="btn-card">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+
+            <img src="/images/products/10000a.jpg">
+
+            <div class="card-content">
+
+                <h3>
+                    10000A High Current Generator
+                </h3>
+
+                <p>
+                    Customized high current system.
+                </p>
+
+                <a href="/products/10000a/"
+                   class="btn-card">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<script>
+
+let current = 0;
+
+const slides =
+    document.querySelectorAll(".slide");
+
+const dots =
+    document.querySelectorAll(".dot");
+
+function showSlide(index)
+{
+    slides.forEach(slide =>
+        slide.classList.remove("active"));
+
+    dots.forEach(dot =>
+        dot.classList.remove("active"));
+
+    slides[index].classList.add("active");
+    dots[index].classList.add("active");
+}
+
+setInterval(() =>
+{
+    current++;
+
+    if(current >= slides.length)
+        current = 0;
+
+    showSlide(current);
+
+},5000);
+
+</script>
+
+{{ end }}

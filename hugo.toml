@@ -1,0 +1,38 @@
+baseURL = "https://www.yourdomain.com/"
+languageCode = "en-us"
+title = "High Current Generator Manufacturer"
+
+theme = "hextra"
+
+[params]
+description = "Professional High Current Generator Manufacturer"
+
+[[menu.main]]
+name = "Home"
+pageRef = "/"
+weight = 1
+
+[[menu.main]]
+name = "Products"
+pageRef = "/products"
+weight = 2
+
+[[menu.main]]
+name = "Applications"
+pageRef = "/applications"
+weight = 3
+
+[[menu.main]]
+name = "About Us"
+pageRef = "/about"
+weight = 4
+
+[[menu.main]]
+name = "Certificates"
+pageRef = "/certificates"
+weight = 5
+
+[[menu.main]]
+name = "Contact"
+pageRef = "/contact"
+weight = 6
